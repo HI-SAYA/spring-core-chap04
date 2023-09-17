@@ -10,8 +10,7 @@ public class Application {
 
     public static void main(String[] args) {
 
-        ApplicationContext context
-                = new AnnotationConfigApplicationContext(ContextConfiguration.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(ContextConfiguration.class);
 
         String error404MessageKR = context.getMessage("error.404", null, Locale.KOREA);
         String error500MessageKR = context.getMessage("error.500", new Object[] {"여러분", new Date()}, Locale.KOREA);
@@ -20,9 +19,10 @@ public class Application {
         System.out.println("I18N error.500 메세지 : " + error500MessageKR);
 
         String error404MessageUS = context.getMessage("error.404", null, Locale.US);
-        String error500MessageUS = context.getMessage("error.500", new Object[] {"여러분", new Date()}, Locale.US);
+        String error500MessageUS = context.getMessage("error.500", new Object[] {"you", new Date()}, Locale.US);
 
-        System.out.println("The I18N message for error.404 메세지 : " + error404MessageUS);
-        System.out.println("The I18N message for error.500 메세지 : " + error500MessageUS);
+        System.out.println("The I18N message for error.404 : " + error404MessageUS);
+        System.out.println("The I18N message for error.500 : " + error500MessageUS);
+
     }
 }

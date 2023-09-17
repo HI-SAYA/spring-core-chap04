@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.scope.subsection01.singeton;
+package com.ohgiraffers.section01.scope.subsection01.singleton;
 
 import com.ohgiraffers.common.Beverage;
 import com.ohgiraffers.common.Bread;
@@ -7,7 +7,6 @@ import com.ohgiraffers.common.ShoppingCart;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-/* 싱글톤, 프로토타입 */
 public class Application {
     public static void main(String[] args) {
 
@@ -38,4 +37,20 @@ public class Application {
         * 이 예제에서 손님 두 명이 각각 쇼핑 카트를 이용해 상품을 담으려고 했지만 cart도 singleton으로 관리 되기 때문에
         * 두 손님이 동일한 카트에 물건을 담은 것이 된다. */
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

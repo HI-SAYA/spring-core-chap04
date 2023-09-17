@@ -31,9 +31,21 @@ public class Application {
 
         System.out.println("cart1의 hashcode : " + cart1.hashCode());
         System.out.println("cart2의 hashcode : " + cart2.hashCode());
-
-
-        /* singleton 스코프에서 prototype 스코프로 변경하면 매번 다른 객체의 cart를 반환하므로
-         * 손님 두 명이 각각 쇼핑 카트를 이용해 상품을 담을 수 있다. */
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -9,6 +9,7 @@ public class ContextConfiguration {
 
     @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
+
         /* 접속하는 세션의 로케일에 따라 자동 재로딩하는 용도의 MessageSource 구현체 */
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
 
@@ -18,6 +19,5 @@ public class ContextConfiguration {
         messageSource.setDefaultEncoding("UTF-8");
 
         return messageSource;
-
     }
 }

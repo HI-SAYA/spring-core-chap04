@@ -8,18 +8,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-@Configuration // 설정 파일임을 나타낸다.
+@Configuration
 public class ContextConfiguration {
-
+    
     @Bean
     public Product carpBread() {
-
+        
         return new Bread("붕어빵", 1000, new java.util.Date());
     }
-
+    
     @Bean
     public Product milk() {
-
+        
         return new Beverage("딸기우유", 1500, 500);
     }
 
@@ -28,12 +28,14 @@ public class ContextConfiguration {
 
         return new Beverage("지리산암반수", 3000, 500);
     }
-
+    
     @Bean
-    @Scope("prototype") // 기본 값 singleton에서 prototype으로 변경
+    @Scope("prototype")     // 기본 값 singleton에서 prototype으로 변경
     public ShoppingCart cart() {
-
+        
         return new ShoppingCart();
     }
-
+    
+    
+    
 }

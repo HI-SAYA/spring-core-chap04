@@ -1,10 +1,5 @@
 package com.ohgiraffers.section02.initdestroy.subsection03.xml;
 
-import org.springframework.stereotype.Component;
-
-import javax.annotation.PostConstruct;
-import javax.annotation.PreDestroy;
-
 public class Owner {
 
     public void openShop() {

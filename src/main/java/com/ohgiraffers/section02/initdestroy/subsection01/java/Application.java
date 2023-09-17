@@ -8,6 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Application {
+
     public static void main(String[] args) {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(ContextConfiguration.class);
@@ -34,8 +35,20 @@ public class Application {
 
         /* init method는 빈 객체 생성 시점에 동작하므로 바로 확인할 수 있지만,
         * destroy method는 빈 객체 소멸 시점에 동작하므로 컨테이너가 종료 되지 않을 경우 확인할 수 없다.
-        * 아래와 같이 강제로 컨테이너를 종료 시키면 destroy method의 동작을 확이날 수 있다.
+        * 아래와 같이 강제로 컨테이너를 종료 시키면 destroy method의 동작을 확인할 수 있다.
         * */
         ((AnnotationConfigApplicationContext)context).close();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
